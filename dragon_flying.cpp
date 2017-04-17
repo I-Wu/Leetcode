@@ -4,6 +4,8 @@
 #include <vector>
 
 using namespace std;
+
+// [2,3,1,4,2] -> 0, 1, 3, out 
 int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     int temp = 0;
