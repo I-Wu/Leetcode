@@ -1,6 +1,6 @@
-Pick up:
-1. PriorityQueue (heap)
-2. Dummy Node
+//Pick up:
+//1. PriorityQueue (heap)
+//2. Dummy Node
 
 public class Solution {
 
@@ -8,7 +8,8 @@ public class Solution {
 	    if(lists == null | lists.length == 0){
 	        return null;
 	    }
-	    PriorityQueue <ListNode> queue = new PriorityQueue <ListNode> (lists.length, new Comparator <ListNode>(){
+	    PriorityQueue <ListNode> queue = new PriorityQueue <ListNode> (lists.length, 
+	    	new Comparator <ListNode>(){
 	       public int compare(ListNode o1, ListNode o2){
 	           if(o1.val > o2.val)
 	                return 1;
@@ -24,7 +25,7 @@ public class Solution {
 	    for(ListNode node:lists)
 	        if(node != null)
 	            queue.add(node);
-queue.size()
+//queue.size()
 
 	    while(queue.peek() != null){
 	        tail.next = queue.poll();
